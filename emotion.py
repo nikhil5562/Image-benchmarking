@@ -5,7 +5,9 @@ import torchvision.transforms as transforms
 import numpy as np
 
 from PIL import Image
-from repvgg import create_RepVGG_A0 as create
+#from repvgg import create_RepVGG_B2 as create
+from vgg import create_RepVGG_A0 as create
+
 
 
 # Define the device to use GPU if available

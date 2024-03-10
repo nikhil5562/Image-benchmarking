@@ -167,3 +167,8 @@ g4_map = {l: 4 for l in optional_groupwise_layers}
 def create_RepVGG_A0(deploy=False):
     return RepVGG(num_blocks=[2, 4, 14, 1], num_classes=8,
                   width_multiplier=[0.75, 0.75, 0.75, 2.5], override_groups_map=None, deploy=deploy)
+
+
+def create_RepVGG_B2(deploy=False):
+    return RepVGG(num_blocks=[4, 6, 16, 1], num_classes=8,
+                  width_multiplier=[2.5, 2.5, 2.5, 5], override_groups_map=None, deploy=deploy)
